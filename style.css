@@ -10,18 +10,15 @@
   }
 
   :root {
-    /* 🎨 Cores
-    --cor-primaria: #f8b400;
-    --cor-secundaria: #1a1a1a;
+    --cor-primaria: #171a15;
+    --cor-secundaria: #fff609;
     --cor-texto: #ffffff;
-    --cor-fundo: #121212;
+    --cor-fundo: gradiente;
 
-    🖋️ Fontes
     --fonte-principal: 'Poppins', sans-serif;
   
-    📏 Espaçamento 
     --padding-padrao: 20px;
-    --largura-max: 1200px;*/
+    --largura-max: 1200px;
   }
 
   body {
