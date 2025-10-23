@@ -10,14 +10,17 @@
   }
 
   :root {
-    --cor-primaria: #171a15;
-    --cor-secundaria: #fff609;
-    --cor-paragrafo: #313131;
+    /*CORES*/
+    --cor-padrao: #171a15;
+    --cor-destaque: #fff609;
     --cor-titulo: #000000;
+    --cor-paragrafo: #313131;
     --cor-fundo: linear-gradient(135deg, #f0f0f0 0%, #bcbcbc 40%,#8a8a8a 100%);
 
-    --fonte-principal: 'Poppins', sans-serif;
-  
+    /*FONTES*/
+    --fonte-titulo: 'Inter', sans-serif;
+    
+    /*DIMENSÕES*/
     --padding-padrao: 20px;
     --largura-max: 1200px;
   }
@@ -31,13 +34,50 @@
   
   h1 {
     color: var(--cor-titulo);
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 64pt;
+  }
+
+  p {
+    color: var(--cor-paragrafo);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 32pt;
   }
 
   a {
     color: inherit;
     text-decoration: none;
+    font-family: "Inter", sans-serif;
   }
   
   ul {
     list-style: none;
   }
+
+  .paragrafo-branco {
+    color:#f0f0f0 ;
+    font-weight: 400;
+    font-size: 20pt;
+  }
+
+  .top-bar {
+    background-color: #000000;
+    color: #f0f0f0;
+    text-align: center;
+  }
+
+  nav {
+    display:flex ;
+  }
+
+  /* .logo-jna {
+    width: 200px;
+    height: 170px;
+    overflow: hidden;
+  }
+
+  .logo-jna img {
+    width: 100%;
+  } */
