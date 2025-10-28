@@ -78,13 +78,13 @@ header {
 }
 
 nav {
-  background-color: #f0f0f0;
+  color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   height: 80px;
-  background-color: rgba(255, 255, 255, 0.568);
+  background-color: rgba(255, 255, 255, 0.486);
   backdrop-filter: blur(60px);
   -webkit-backdrop-filter: blur(60px);
   z-index: 1000;
@@ -97,14 +97,24 @@ nav ul {
   gap: 32px;
 }
 
-#barra-nav a {
-  color: var(--cor-padrao);
-  font-weight: 500;
-  transition: color 0.3s;
+nav ul li a {
+  position: relative;
+  padding: 4px 0;
 }
 
-#barra-nav a:hover {
-  color: var(--cor-destaque);
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* linha na base do link */
+  width: 0%; /* começa invisível */
+  height: 2px; /* espessura da linha */
+  background-color: var(--cor-destaque);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
 
 .logo-jna {
