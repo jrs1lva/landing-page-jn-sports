@@ -1,83 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  :root {
-    /*CORES*/
-    --cor-padrao: #171a15;
-    --cor-destaque: #fff609;
-    --cor-titulo: #000000;
-    --cor-paragrafo: #313131;
-    --cor-fundo: linear-gradient(135deg, #f0f0f0 0%, #bcbcbc 40%,#8a8a8a 100%);
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
-    /*FONTES*/
-    --fonte-titulo: 'Inter', sans-serif;
-    
-    /*DIMENSÕES*/
-    --padding-padrao: 20px;
-    --largura-max: 1200px;
-  }
+:root {
+  /*CORES*/
+  --cor-padrao: #171a15;
+  --cor-destaque: #fff609;
+  --cor-titulo: #000000;
+  --cor-paragrafo: #313131;
+  --cor-fundo: linear-gradient(135deg, #f0f0f0 0%, #bcbcbc 40%, #8a8a8a 100%);
 
-  body {
-    font-family: var(--fonte-principal);
-    background: var(--cor-fundo);
-    color: var(--cor-paragrafo);
-    line-height: 1.6;
-  }
-  
-  h1 {
-    color: var(--cor-titulo);
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    font-size: 64pt;
-  }
+  /*FONTES*/
+  --fonte-titulo: "Inter", sans-serif;
 
-  p {
-    color: var(--cor-paragrafo);
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    font-size: 32pt;
-  }
+  /*DIMENSÕES*/
+  --padding-padrao: 20px;
+  --largura-max: 1200px;
+}
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-  }
-  
-  ul {
-    list-style: none;
-  }
+body {
+  font-family: var(--fonte-titulo);
+  background: var(--cor-fundo);
+  color: var(--cor-paragrafo);
+  line-height: 1.6;
+}
 
-  .paragrafo-branco {
-    color:#f0f0f0 ;
-    font-weight: 400;
-    font-size: 20pt;
-  }
+h1 {
+  color: var(--cor-titulo);
+  font-weight: 900;
+  font-size: 64pt;
+}
 
-  .top-bar {
-    background-color: #000000;
-    color: #f0f0f0;
-    text-align: center;
-  }
+p {
+  color: var(--cor-paragrafo);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 32pt;
+}
 
-  nav {
-    display:flex ;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
 
-  /* .logo-jna {
-    width: 200px;
-    height: 170px;
-    overflow: hidden;
-  }
+ul {
+  list-style: none;
+}
 
-  .logo-jna img {
-    width: 100%;
-  } */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.avisos {
+  color: #f0f0f0;
+  font-weight: 800;
+  font-size: 10pt;
+  padding: 10px;
+}
+
+.top-bar {
+  background-color: #000000;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+nav {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.568);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+  z-index: 1000;
+}
+
+nav ul {
+  padding: 16px 24px;
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+}
+
+#barra-nav a {
+  color: var(--cor-padrao);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+#barra-nav a:hover {
+  color: var(--cor-destaque);
+}
+
+.logo-jna {
+  height: 100%;
+  width: auto;
+  padding: 0;
+}
+
+.logo-jna img {
+  justify-content: center;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}
