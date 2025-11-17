@@ -30,7 +30,7 @@ body {
   font-family: var(--fonte-titulo);
   background: var(--cor-fundo);
   color: var(--cor-paragrafo);
-  line-height: 1.6;
+  line-height: 1.6pt;
 }
 
 h1 {
@@ -185,7 +185,7 @@ main {
 
 .btn-padrao {
   position: absolute;
-  bottom: 45px;
+  bottom: 4%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
