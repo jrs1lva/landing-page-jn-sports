@@ -20,7 +20,6 @@ body {
   --botao-comprar: linear-gradient(to right, #171A15, #7C7D6F);
   /*FONTES*/
   --fonte-titulo: "Inter", sans-serif;
-
   /*DIMENSÕES*/
   --padding-padrao: 20px;
   --largura-max: 1200px;
@@ -28,9 +27,7 @@ body {
 
 body {
   font-family: var(--fonte-titulo);
-  background: var(--cor-fundo);
   color: var(--cor-paragrafo);
-  line-height: 1.6pt;
 }
 
 h1 {
@@ -130,7 +127,7 @@ nav ul li a:hover::after {
 }
 
 main {
-  
+    background: var(--cor-fundo);
 }
 
 #hero {
@@ -183,13 +180,13 @@ main {
   color: #fff609;
 }
 
-.btn-padrao {
+#btn-comprar {
   position: absolute;
-  bottom: 4%;
+  bottom: 3.5%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  padding: 10px 20px;
+  padding: 15px;
   border-radius: 50px;
   color: white;
   background: var(--botao-comprar);
@@ -198,7 +195,7 @@ main {
   transition: all 0.8s ease;
 }
 
-.btn-padrao:hover {
+#btn-comprar:hover {
   transform: translateX(-50%) scale(1.05);
   background: var(--cor-destaque);
   color: var(--cor-padrao);
