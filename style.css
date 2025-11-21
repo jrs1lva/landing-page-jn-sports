@@ -134,12 +134,12 @@ main {
   width: 100%;
 }
 
-.imgs-hero {
+.section-hero {
   position: relative;
   width: 100%;
 }
 
-.imgs-hero img.ciclista {
+.section-hero img.ciclista {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -201,7 +201,7 @@ main {
   color: var(--cor-padrao);
 }
 
-.section-hero {
+.section-catalogo {
   background-color: white;
   margin: 150px;
   border-radius: 10%;
@@ -210,17 +210,56 @@ main {
 
 #catalogo h1 {
   font-size: 70px;
-  padding: 50px 100px 10px;
+  padding: 20px 100px 20px;
 }
 
 #catalogo p {
-  font-size: 30px;
-  padding: 100px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 20px 100px 20px;
+  margin-top: 2px;
 }
 
-#layout-catalogo {
-  display: flex;
-  flex-direction: row;
-  gap: 0;
-  padding: 0px;
+.config-btn {
+  padding: 50px;
+}
+
+#btn-catalogo {
+  gap: 20px;
+  display: flexbox;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+  background: var(--botao-comprar);
+  font-size: 15pt;
+  font-weight: 600;
+  transition: all 0.8s ease;
+}
+
+#btn-catalogo:hover {
+  transform: translateX(-50%) scale(1.05);
+  background: var(--cor-destaque);
+  color: var(--cor-padrao);
+}
+
+#btn-mercado-livre {
+  gap: 20px;
+  transform: translateX(-50%);
+  padding: 15px;
+  border-radius: 50px;
+  color: black;
+  background: var(--cor-destaque);
+  font-size: 15pt;
+  font-weight: 600;
+  transition: all 0.8s ease;
+}
+
+#btn-mercado-livre:hover {
+  transform: translateX(-50%) scale(1.05);
+  background: var(--botao-comprar);
+  color: white;
 }
